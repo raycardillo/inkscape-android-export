@@ -6,7 +6,7 @@ This Inkscape extension exports all selected items in different densities. The e
 Install
 --------
 
-Download `corona_export.inx` and `corona_export.py` and copy both files to your Inkscape extensions folder. For example, `$HOME/.config/inkscape/extensions` or ``. A restart of Inkscape is required.
+Download `corona_export.inx` and `corona_export.py` and copy both files to your Inkscape extensions folder. For example, `$HOME/.config/inkscape/extensions` or `C:\Users\<UserName>\AppData\Roaming\inkscape\extensions`. A restart of Inkscape is required.
 
 Usage
 --------
