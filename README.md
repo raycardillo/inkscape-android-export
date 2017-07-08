@@ -1,7 +1,10 @@
 inkscape-corona-export
 ========
 
-This Inkscape extension exports all selected items in different densities. The exported PNGs will be named by their ID in the SVG.
+This Inkscape extension exports PNGs in different densities. The exported PNGs will be named by their ID in the SVG.
+
+For reference see the Corona SDK documentation for Dynamic Image Selection:
+https://docs.coronalabs.com/guide/basics/configSettings/#dynamicimages
 
 Install
 --------
