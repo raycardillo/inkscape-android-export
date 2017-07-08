@@ -1,4 +1,4 @@
-inkscape-android-export
+inkscape-corona-export
 ========
 
 This Inkscape extension exports all selected items in different densities. The exported PNGs will be named by their ID in the SVG.
@@ -6,7 +6,7 @@ This Inkscape extension exports all selected items in different densities. The e
 Install
 --------
 
-Download `android_export.inx` and `android_export.py` and copy both files to your `$HOME/.config/inkscape/extensions` folder. A restart of Inkscape is required.
+Download `corona_export.inx` and `corona_export.py` and copy both files to your Inkscape extensions folder. For example, `$HOME/.config/inkscape/extensions` or ``. A restart of Inkscape is required.
 
 Usage
 --------
@@ -18,7 +18,7 @@ Usage
 License
 ========
 
-    Copyright 2013 Christian Becker
+    Copyright 2017 Ray Cardillo
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
