@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<inkscape-extension xmlns="http://www.inkscape.org/namespace/inkscape/extension">
+	<_name>Corona Images</_name>
+	<id>com.cardilloscreations.inkscape.corona_export</id>
+
+	<dependency type="executable" location="extensions">corona_export.py</dependency>
+
+	<param name="source" type="notebook">
+		<page name="selected_ids" _gui-text="Selection">
+			<_param name="title" type="description">Exports selected items using their object ID as the base file name. For convenience, you can group objects and set their ID using Object Properties.</_param>
+			<param name="only-selected" type="boolean" _gui-text="Hide all except selected">true</param>
+			<param name="transparent-background" type="boolean" _gui-text="Transparent background">true</param>
+		</page>
+		<page name="page" _gui-text="Page">
+			<_param name="title" type="description">Exports the entire page using the name below as the base file name.</_param>
+			<param name="pageName" type="string" _gui-text="Page Name">page</param>
+		</page>
+	</param>
+
+	<param name="outdir" type="string" _gui-text="Output Directory">~/</param>
+	
+	<param name="dpi_section" type="description" appearance="header">Image DPI Configuration</param>
+	<param name="baseDPI" type="int" indent="1" min="1" max="999" _gui-text="Base Export DPI">72</param>
+	<param name="export2xDPI" type="boolean" indent="1" _gui-text="Export @2x Base DPI">true</param>
+	<param name="export4xDPI" type="boolean" indent="1" _gui-text="Export @4x Base DPI">true</param>
+	
+	<param name="other_section" type="description" appearance="header">Image Manipulation</param>
+	<param name="strip" type="boolean" indent="1" _gui-text="Use ImageMagick to reduce the image size">true</param>
+	<param name="optimize" type="boolean" indent="1" _gui-text="Use OptiPNG to reduce the image size">true</param>
+	<param name="optimizeLevel" type="int" indent="1" min="1" max="7" _gui-text="Use OptiPNG to reduce the image size">5</param>
+
+	<effect needs-live-preview="false">
+		<object-type>all</object-type>
+		<effects-menu>
+			<submenu _name="Export"/>
+		</effects-menu>
+	</effect>
+
+	<script>
+		<command reldir="extensions" interpreter="python">corona_export.py</command>
+	</script>
+</inkscape-extension>
